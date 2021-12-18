@@ -248,8 +248,8 @@ $EndComp
 Wire Wire Line
 	2100 5750 2250 5750
 Connection ~ 2250 5750
-Text Notes 3100 5250 0    157  ~ 31
-Power
+Text Notes 2550 5050 0    157  ~ 31
+Power Supply
 $Comp
 L Device:R R15
 U 1 1 6462932B
@@ -869,7 +869,7 @@ F 3 "" H 26200 13550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 27550 4150 0    157  ~ 31
-BeagleBone_Black
+BeagleBone Black
 Text GLabel 11550 9050 0    50   Input ~ 0
 P8.16_OUT
 Text GLabel 8500 15300 0    50   Input ~ 0
@@ -7108,10 +7108,10 @@ Text GLabel 17650 13600 0    50   Input ~ 0
 P9.22_OUT
 Text GLabel 17650 12100 0    50   Input ~ 0
 P9.21_OUT
-Text Notes 25900 9700 0    157  ~ 31
+Text Notes 26150 9650 0    157  ~ 31
 RS485\n\n\n\n
 Text Notes 24450 17500 0    157  ~ 31
-PinOut\n\n\n\n
+Pin Out\n\n\n\n
 Text Notes 10900 9000 0    157  ~ 31
 Transoptors\n\n\n\n
 Text Notes 17600 4950 0    157  ~ 31
@@ -12380,13 +12380,10 @@ C7 02 00 00 00 00 83 FC AD A7 B1 A3 30 02 00 80 35 79 01 00 00 00 AC C9 0B 00 00
 B7 4C D1 AD 1B 2E 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Text Notes 30800 9750 0    157  ~ 31
-PINOUT_ RS485_ I2C\n\n\n\n\n
+Text Notes 29000 9800 0    157  ~ 31
+Pinout RS485 and I2C\n\n\n\n\n
 Wire Notes Line
 	28550 8250 28550 11150
-Connection ~ 30850 18400
-Connection ~ 30850 18300
-Connection ~ 30850 18200
 Wire Wire Line
 	30350 18400 29700 18400
 Wire Wire Line
@@ -12395,7 +12392,6 @@ Wire Wire Line
 	30350 18200 30100 18200
 Wire Notes Line
 	32150 3650 32150 21000
-Connection ~ 31200 18400
 $Comp
 L power:GND #PWR0287
 U 1 1 61C1E0E6
@@ -12408,36 +12404,15 @@ F 3 "" H 31200 18750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	31200 18400 31200 18750
-Wire Wire Line
 	29700 18400 29700 17950
-Wire Wire Line
-	31200 18300 31200 18400
 Text Notes 31400 17050 2    157  ~ 31
-Pin_Down_PCB\n\n
+Pin Down Relay\n\n
 Text GLabel 30350 18500 0    50   Input ~ 0
 SCL
-Text GLabel 30850 18500 2    50   Input ~ 0
-SDA
-Connection ~ 31200 18300
-Wire Wire Line
-	30850 18300 31200 18300
-Wire Wire Line
-	31200 18200 31200 18300
-Wire Wire Line
-	30850 18200 31200 18200
-Wire Wire Line
-	30850 18400 31200 18400
-Wire Wire Line
-	30800 18400 30850 18400
 Wire Wire Line
 	29900 18300 29900 17950
 Wire Wire Line
-	30800 18300 30850 18300
-Wire Wire Line
 	30100 18200 30100 17950
-Wire Wire Line
-	30800 18200 30850 18200
 $Comp
 L power:+3.3V #PWR0265
 U 1 1 6185BCCA
@@ -12469,17 +12444,6 @@ F 1 "+24V" H 30115 18123 50  0000 C CNN
 F 2 "" H 30100 17950 50  0001 C CNN
 F 3 "" H 30100 17950 50  0001 C CNN
 	1    30100 17950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x04_Odd_Even J10
-U 1 1 61855C49
-P 30550 18300
-F 0 "J10" H 30600 18617 50  0000 C CNN
-F 1 "Conn_02x04_Odd_Even" H 30600 18526 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 30550 18300 50  0001 C CNN
-F 3 "~" H 30550 18300 50  0001 C CNN
-	1    30550 18300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -12872,7 +12836,7 @@ L Connector:Screw_Terminal_01x02 J1
 U 1 1 61B67884
 P 22400 4700
 F 0 "J1" H 22480 4692 50  0000 L CNN
-F 1 "ZASILACZ" H 22480 4601 50  0000 L CNN
+F 1 "EXT_PSU" H 22480 4601 50  0000 L CNN
 F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G_1x02_P5.00mm_Horizontal" H 22400 4700 50  0001 C CNN
 F 3 "~" H 22400 4700 50  0001 C CNN
 	1    22400 4700
@@ -12909,7 +12873,7 @@ Wire Wire Line
 Wire Wire Line
 	21750 4600 22200 4600
 Text Notes 20250 4700 0    157  ~ 31
-Automatic Power Change\n\n\n
+Automatic PSU Switch\n\n\n
 Text Notes 15350 3550 0    394  ~ 79
 Input Board v0.3 BBB\n\n\n
 Wire Notes Line
@@ -12927,7 +12891,7 @@ F 4 "C14663" H 13250 5350 50  0001 C CNN "JLCPCB"
 	1    0    0    -1  
 $EndComp
 Text Notes 13950 4950 0    157  ~ 31
-Clock_RTC\n\n\n
+Clock RTC\n\n\n
 Wire Wire Line
 	14950 5300 14950 5600
 $Comp
@@ -13208,7 +13172,7 @@ F 3 "" H 15750 5300 50  0001 C CNN
 	1    15750 5300
 	1    0    0    -1  
 $EndComp
-Text Notes 10150 4450 0    157  ~ 31
+Text Notes 10000 4450 0    157  ~ 31
 Logic Level Converter
 $Comp
 L power:GND2 #PWR010
@@ -13912,4 +13876,31 @@ F 3 "" H 26400 7550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	26400 7550 26400 7400
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J10
+U 1 1 61855C49
+P 30550 18300
+F 0 "J10" H 30600 18617 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 30600 18526 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 30550 18300 50  0001 C CNN
+F 3 "~" H 30550 18300 50  0001 C CNN
+	1    30550 18300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	30850 18400 31200 18400
+Wire Wire Line
+	30850 18200 31200 18200
+Wire Wire Line
+	31200 18200 31200 18300
+Wire Wire Line
+	30850 18300 31200 18300
+Connection ~ 31200 18300
+Text GLabel 30850 18500 2    50   Input ~ 0
+SDA
+Wire Wire Line
+	31200 18300 31200 18400
+Wire Wire Line
+	31200 18400 31200 18750
+Connection ~ 31200 18400
 $EndSCHEMATC

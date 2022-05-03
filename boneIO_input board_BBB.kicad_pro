@@ -39,9 +39,9 @@
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
-        "silk_text_size_h": 1.0,
+        "silk_text_size_h": 0.7,
         "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.15,
+        "silk_text_thickness": 0.09999999999999999,
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
@@ -55,7 +55,9 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "clearance|192184859|66425339|2a15cc97-5927-4dce-858b-0592a125324e|65469b4d-19fc-4482-9cb9-17cdb5cb4354"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -121,6 +123,7 @@
       },
       "track_widths": [
         0.0,
+        0.15,
         0.25,
         0.4,
         0.5,
@@ -384,9 +387,9 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "../../../../../../Program Files/KiCad/6.0/",
       "specctra_dsn": "",
-      "step": "",
+      "step": "boneIO_input board_BBB.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

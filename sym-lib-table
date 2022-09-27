@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name RS485)(type Legacy)(uri ${KIPRJMOD}/RS485.lib)(options "")(descr ""))
+  (lib (name "RS485")(type "Legacy")(uri "${KIPRJMOD}/RS485.lib")(options "")(descr ""))
+  (lib (name "74HC04D")(type "Legacy")(uri "${KIPRJMOD}/3D_model/74HC04D.lib")(options "")(descr ""))
 )
